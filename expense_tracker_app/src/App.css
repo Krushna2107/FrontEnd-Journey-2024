@@ -1,0 +1,178 @@
+/* General styling reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Main container for the app */
+.container {
+  max-width: 380px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Balance Section */
+.balance-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance {
+  font-size: 2.5rem;
+  color: #1e88e5;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.balance-label {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Income and Expense Section */
+.income-expense {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f3f8fe;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.income, .expense {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+}
+
+.income {
+  background-color: #43a047;
+  margin-right: 10px;
+}
+
+.expense {
+  background-color: #e53935;
+  margin-left: 10px;
+}
+
+/* Transaction History */
+.transaction-history {
+  margin-top: 30px;
+}
+
+.transaction-history h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f8fe;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item.positive {
+  border-left: 5px solid #43a047;
+}
+
+.transaction-item.negative {
+  border-left: 5px solid #e53935;
+}
+
+.transaction-item p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.transaction-item .amount {
+  color: #333;
+}
+
+/* New Transaction Form */
+.add-transaction-form {
+  margin-top: 30px;
+}
+
+.add-transaction-form h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.add-transaction-form label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.add-transaction-form input[type="text"],
+.add-transaction-form input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.add-transaction-form input[type="text"]:focus,
+.add-transaction-form input[type="number"]:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 5px rgba(30, 136, 229, 0.3);
+}
+
+.add-transaction-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1e88e5;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-transaction-form button:hover {
+  background-color: #1565c0;
+}

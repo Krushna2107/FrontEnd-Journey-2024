@@ -1,0 +1,30 @@
+.weatherbg{
+  background-color: rgb(231, 135, 135);
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading{
+  color: rgb(58, 55, 55);
+  font-weight: bolder;
+}
+.weatherResultBox{
+  margin: auto;
+  height: 300px;
+  width: 500px;
+}
+.weatherIcon{
+  width: 100px;
+  height: 100px;
+  margin-top: 1rem;
+}
+.weatherCity{
+  font-size: 25px;
+  font-weight: bold;
+}
+.weatherTem{
+  font-size: 30px;
+  margin-top: 40px;
+}
